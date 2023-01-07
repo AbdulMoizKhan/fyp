@@ -1,0 +1,331 @@
+:root {
+    --primary_bc: ;
+    /* --primary_nav: linear-gradient(to bottom right, #b3f6d8a8, #52a7c1af); */
+    --primary_home: linear-gradient(to bottom right, #B3F6D8, #52A7C1);
+    
+    --primary_btn_invert: linear-gradient(to bottom right, #52A7C1,#B3F6D8 );
+    --dark:#333;
+    --light:#fff;
+}
+
+
+.App {
+  background-color: var(--light);
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: #000000;
+  box-sizing: border-box;
+  font-family:"Google Sans", Roboto, Arial, sans-serif;
+}
+
+
+.nav {
+   /* background-image: var(--primary_nav); */
+   background-color:#fff;
+   color: #000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 6rem;
+   
+   /* width: 90%; */
+   padding: 0 6rem;
+   z-index: 100;
+}
+
+.nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav__logo {
+    height: 4.5rem;
+    transition: all 0.3s;
+}
+
+.nav__links {
+    display: flex;
+    place-items: center;
+    list-style: none;
+}
+
+.nav__item {
+    margin: 2rem 2rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    font-size: 20px;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+    padding: 0.8rem 2.5rem;
+    border-radius: 4rem;
+    background-image: linear-gradient(to top right, #39b385, #9be15d);
+    color: #222;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+    color: inherit;
+    background-color: green;
+    color: rgb(75, 75, 75);
+}
+
+.home_t {
+    grid-area: home_t;
+    line-height: 1.35;
+}
+
+.home_p {
+    grid-area: home_p;
+}
+
+.home_i {
+    grid-area: home_i;
+}
+.home{ 
+    background-image: var(--primary_home);
+    height: 70vh;
+    display: grid;
+    grid-template-areas:
+            'home_t home_t'
+            'home_p home_i';
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.img1{
+    width: 130px;
+    padding: 10px;
+}
+
+.btn__Learnmore{
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    border: none;
+}
+.btn__Learnmore:hover{
+    background-image: var(--primary_btn_invert);
+}
+
+
+.h2{
+    text-align: center;
+}
+
+
+.Map_Api{
+    height: 80vh;
+    background-color: var(--light);
+}
+.footer{
+    text-align: center;
+    background-color: var(--dark);
+    color: #ccc;
+    height: 10vh;
+    padding: 2rem;
+}
+/* case study  */
+
+.header-cards {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+   
+}
+/* cards */
+.card_1 {
+    width: 25rem;
+    height: 30rem;
+    background-image: var(--primary_home);
+    border-radius: 40px;
+    
+}
+
+.card-header-1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+
+.card-text-1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* carrd2 */
+
+.card_2 {
+    width: 25rem;
+    height: 30rem;
+    background-image: var(--primary_home);
+    
+    border-radius: 40px;
+}
+
+.card-header-2 {
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+.card-text-2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* card3 */
+.card_3 {
+    width: 25rem;
+    height: 30rem;
+    background-image: var(--primary_home);
+    border-radius: 40px;
+    
+}
+
+.card-header-3 {
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+
+.card-text-3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Questionair {
+    height: 80vh;
+    background-image: var(--primary_home);
+}
+
+/* questionair */
+
+
+.q_title{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.button_s {
+     padding: 1rem 2rem;
+     border-radius: 20px;
+     font-size: 1.3rem;
+     border: none;
+ }
+.steps_t{
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.btn_qt{
+    font-size: 25px;
+    background-image: var(--primary_home);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.b_name{
+    top: 200px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.l_type{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+ /* .q_start {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 10px;
+     text-align: center;
+     padding: 20px;
+     justify-items: stretch;
+ } */
+ /*
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+} */
+/* <div class="dropdown">
+          <button class="dropbtn">Business idea</button>
+          <div class="dropdown-content">
+            <a href="#">Rest</a>
+            <a href="#">IT Support, Technology Consulting, and Repair</a>
+            <a href="#">Cleaning Services</a>
+          </div>
+          </div> */
