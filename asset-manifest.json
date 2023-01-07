@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AbdulMoizKhan/fyp.git/static/css/main.0988a822.css",
+    "main.js": "/AbdulMoizKhan/fyp.git/static/js/main.caa13684.js",
+    "static/js/787.28cb0dcd.chunk.js": "/AbdulMoizKhan/fyp.git/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/AbdulMoizKhan/fyp.git/index.html",
+    "main.0988a822.css.map": "/AbdulMoizKhan/fyp.git/static/css/main.0988a822.css.map",
+    "main.caa13684.js.map": "/AbdulMoizKhan/fyp.git/static/js/main.caa13684.js.map",
+    "787.28cb0dcd.chunk.js.map": "/AbdulMoizKhan/fyp.git/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0988a822.css",
+    "static/js/main.caa13684.js"
+  ]
+}
